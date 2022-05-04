@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Survey From</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<main>
+			<header>
+				<h1>Tell me something about you !</h1>
+				<h3 class="description">
+					Thank you for taking the time to help me improve my skills ;)
+				</h3>
+			</header>
+
+			<div class="background">
+				<img
+					src="https://images.pexels.com/photos/747964/pexels-photo-747964.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+					alt="The men sitting and thinking about something important"
+					class="photo"
+				/>
+			</div>
+
+			<div class="box">
+				<form class="survey-form">
+					<label for="name" class="header-names">Name</label
+					><input
+						for="name"
+						class="form-add"
+						type="text"
+						required
+						placeholder="Enter your name"
+					/>
+
+					<label for="email" class="header-names">Email</label>
+					<input
+						for="email"
+						required
+						class="form-add"
+						type="email"
+						placeholder="Enter your email"
+					/>
+
+					<label for="number" class="header-names"
+						>Age
+						<p class="ask-description">(optional)</p></label
+					>
+					<input
+						class="form-add"
+						type="number"
+						min="1"
+						max="99"
+						step="1"
+						placeholder="Enter your age"
+					/>
+
+					<h2 class="header-names">
+						Which option best describes your current role?
+					</h2>
+
+					<label for="job" id="dropdown">
+						<select class="job">
+							<option disabled="" selected="">Select current role</option>
+							<option value="Student">Student</option>
+							<option value="Recruiter">Recruiter</option>
+							<option value="Technical Recruiter">Technical Recruiter</option>
+							<option value="Talent Acquisition">Talent Acquisition</option>
+							<option value="Prefer not to say">Prefer not to say</option>
+						</select>
+					</label>
+
+					<h2 class="header-names">
+						Would you recommend my profile to a friend?
+					</h2>
+
+					<div class="radio-btns-div">
+						<label class="radio-btns"
+							>Definitely!
+							<input
+								class="radio-btns"
+								type="radio"
+								name="definitely-maybe-notsure"
+								value="definitely"
+							/>
+						</label>
+
+						<label class="radio-btns"
+							>Maybe
+							<input
+								class="radio-btns"
+								type="radio"
+								name="definitely-maybe-notsure"
+								value="maybe"
+							/>
+						</label>
+
+						<label class="radio-btns"
+							>Not Sure
+							<input
+								class="radio-btns"
+								type="radio"
+								name="definitely-maybe-notsure"
+								value="notsure"
+						/></label>
+					</div>
+
+					<h2 class="header-names">What would you like to see improved?</h2>
+					<h6 class="header-desc">(Check all that apply)</h6>
+
+					<div class="choose-container">
+						<div class="choose-div">
+							<label class="choose"
+								><input
+									class="choose-input"
+									type="checkbox"
+									name="chooser"
+									value="more-projects"
+								/>More projects</label
+							>
+						</div>
+						<div class="choose-div">
+							<label class="choose"
+								><input
+									class="choose-input"
+									type="checkbox"
+									name="chooser"
+									value="level-up-projects"
+								/>Level-up projects</label
+							>
+						</div>
+						<div class="choose-div">
+							<label class="choose"
+								><input
+									class="choose-input"
+									type="checkbox"
+									name="chooser"
+									value="bigger-projects"
+								/>Bigger projects</label
+							>
+						</div>
+						<div class="choose-div">
+							<label class="choose"
+								><input
+									class="choose-input"
+									type="checkbox"
+									name="chooser"
+									value="more-css-projects"
+								/>More HTML/CSS projects</label
+							>
+						</div>
+						<div class="choose-div">
+							<label class="choose"
+								><input
+									class="choose-input"
+									type="checkbox"
+									name="chooser"
+									value="more-js-projects"
+								/>More JavaScript projects</label
+							>
+						</div>
+						<div class="choose-div">
+							<label class="choose"
+								><input
+									class="choose-input"
+									type="checkbox"
+									name="chooser"
+									value="more-react-projects"
+								/>More React projects</label
+							>
+						</div>
+						<div class="choose-div">
+							<label class="choose"
+								><input
+									class="choose-input"
+									type="checkbox"
+									name="chooser"
+									value="cleaner-code"
+								/>Cleaner code</label
+							>
+						</div>
+						<div class="choose-div">
+							<label class="choose"
+								><input
+									class="choose-input"
+									type="checkbox"
+									name="chooser"
+									value="better-code"
+								/>Better code</label
+							>
+						</div>
+						<div class="choose-div">
+							<label class="choose"
+								><input
+									class="choose-input"
+									type="checkbox"
+									name="chooser"
+									value="better-education"
+								/>Better education</label
+							>
+						</div>
+						<div class="choose-div">
+							<label class="choose"
+								><input
+									class="choose-input"
+									type="checkbox"
+									name="chooser"
+									value="more-courses"
+								/>More Courses</label
+							>
+						</div>
+					</div>
+					<h2 class="header-names">Any comments or suggestions?</h2>
+					<textarea
+						class="comment"
+						name="comment"
+						rows="4"
+						cols="5"
+						placeholder="Enter your comment here..."
+					></textarea>
+					<button class="submit" type="submit">Submit!</button>
+				</form>
+			</div>
+			<p class="copyright">Created by Damian Jamróz</p>
+		</main>
+	</body>
+</html>

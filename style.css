@@ -1,0 +1,260 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+	font-family: inherit;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+}
+
+textarea {
+	resize: vertical;
+}
+body {
+	font-family: "Bakbak One", cursive;
+	text-align: center;
+	background-color: rgb(171, 228, 228);
+}
+
+h1 {
+	margin-top: 4rem;
+	font-size: 4rem;
+	font-size: 1.75rem;
+}
+.description {
+	font-style: italic;
+	font-size: 1rem;
+}
+.photo {
+	position: fixed;
+	width: 100%;
+	z-index: -6;
+	opacity: 0.6;
+	top: 0;
+	left: 0;
+}
+.box {
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 90%;
+	height: fit-content;
+	margin: auto;
+	border-radius: 10px;
+	margin-top: 2rem;
+	padding-top: 0.5rem;
+}
+.header-names {
+	color: white;
+	display: flex;
+	text-align: left;
+	font-size: 1.5rem;
+	flex-direction: column;
+	margin: 0.5rem 6%;
+}
+.form-add {
+	height: 5vh;
+	width: 88%;
+}
+.ask-description {
+	color: white;
+	text-align: left;
+	font-size: 0.75rem;
+}
+.job {
+	color: black;
+	text-align: left;
+	font-size: 1.5rem;
+	height: 5vh;
+	width: 88%;
+}
+.radio-btns-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin: 1rem 3rem;
+	width: fit-content;
+}
+.radio-btns {
+	color: white;
+	text-align: left;
+	font-size: 1rem;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 0.25rem 0;
+}
+.header-desc {
+	color: white;
+	text-align: left;
+	font-size: 1rem;
+	margin-left: 2.5rem;
+}
+.choose-container {
+	width: 350px;
+	height: 200px;
+	margin-left: 2rem;
+	margin-top: 1rem;
+	font-size: 1.25rem;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: flex-start;
+	text-align: left;
+}
+.choose-div {
+	display: flex;
+	justify-content: space-between;
+	margin: 0.75rem;
+	width: 50%;
+}
+.choose {
+	color: white;
+}
+.comment {
+	max-height: 15vh;
+	height: 10vh;
+	width: 88%;
+}
+.submit {
+	color: black;
+	font-size: 3rem;
+	height: 7vh;
+	width: 80%;
+	background-color: white;
+	border-radius: 10px;
+	border: none;
+	margin: 2.5rem 0;
+}
+.copyright {
+	color: black;
+	margin-top: 2rem;
+}
+@media screen and (min-width: 576px) {
+	.description {
+		font-size: 1.5rem;
+	}
+	.header-names {
+		font-size: 2rem;
+		margin: 1rem 3.75rem;
+	}
+	.ask-description {
+		font-size: 1.25rem;
+	}
+	.radio-btns {
+		font-size: 1.75rem;
+		margin-left: 1rem;
+	}
+	.header-desc {
+		font-size: 1.25rem;
+		margin-left: 3.5rem;
+	}
+	.choose-container {
+		font-size: 1.65rem;
+		margin-left: 3.25rem;
+	}
+}
+@media screen and (min-width: 768px) {
+	h1 {
+		font-size: 3.5rem;
+	}
+	.description {
+		font-size: 1.75rem;
+	}
+	.header-names {
+		font-size: 2.25rem;
+		margin: 1.5rem 4.75rem;
+	}
+	.radio-btns {
+		font-size: 2rem;
+		margin-left: 1.25rem;
+	}
+	.header-desc {
+		font-size: 1.25rem;
+		margin-left: 5rem;
+	}
+	.choose-div {
+		width: 40%;
+	}
+	.choose-container {
+		font-size: 1.75rem;
+		margin: 2rem auto;
+		width: 85%;
+		height: 250px;
+	}
+}
+@media screen and (min-width: 992px) {
+	h1 {
+		font-size: 3.5rem;
+	}
+	.description {
+		font-size: 1.75rem;
+	}
+	.photo {
+		display: block;
+		width: 100%;
+	}
+	.box {
+		margin-top: 5rem;
+		max-width: 900px;
+		margin-bottom: 18rem;
+	}
+	.header-names {
+		font-size: 2.5rem;
+		margin-left: 5.5rem;
+	}
+	.radio-btns {
+		margin-left: 1.5rem;
+	}
+	.header-desc {
+		margin-left: 6rem;
+	}
+	.choose-container {
+		font-size: 2rem;
+		margin: 2rem auto;
+		width: 85%;
+		height: 250px;
+	}
+	.radio-btns,
+	.choose:hover {
+		cursor: pointer;
+	}
+	.submit {
+		transition: 0.3s all ease-in-out;
+		margin: 5rem;
+	}
+	.submit:hover {
+		background-color: black;
+		color: white;
+		font-weight: bold;
+		cursor: pointer;
+	}
+	.copyright {
+		font-size: 1.25rem;
+	}
+}
